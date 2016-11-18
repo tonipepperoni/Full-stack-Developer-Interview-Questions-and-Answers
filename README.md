@@ -33,19 +33,49 @@ This repo contains a number of full-stack developer interview questions that can
   1. [Cryptography](#cryptography)
 
 ####[[⬆]](#toc) <a name='general'>General Questions:</a>
+
+4 fundamentals of object orientated design
+*inheritance
+*polymorphism
+*encapsulation
+*abstraction
+
+
 * What is *polymorphism*? (Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)
+
 * What is *encapsulation* (Packing of data and functions into a single component)
-* What is *inversion of control*? (A design in which custom-written portions of a computer program receive the flow of control from a generic, reusable library)
+Is a mechanism of wrapping variables which are used by the methods within a class, and it encapsulates the variables as private so only the methods of that class can access it.
+
+* What is an *abstraction*?
+An abstract class just gives you an indication of what kind of methods there are. You cannot create an instanse of an abstract class directly, rather it offers you a blue print. You can declare an abstract class as a type, but it must be an instance of an object inheriting that abstract class.
+
+
+* What is *inversion of control* (IOC)? (A design in which custom-written portions of a computer program receive the flow of control from a generic, reusable library)
+So it basically allows you to have less dependency/restrictions on specific objects. It's to write code in a delegated manner. So basically you have a constructor which 
+
+
 * What is tail recursion? (A tail call is a subroutine call performed as the final action of a procedure)
+
+
 * What is *virtual function*?
 * What is *virtual method table*?
 * What is *dynamic binding*?(Actual method implementation invoked is determined at run time based on the class of the object, not the type of the variable or expression)
 * How does *garbage collector* work? (Mark and sweep: mark: traverse object graph starting from root objects, sweep: garbage collect unmarked objects. Optimizations: young/old generations, incremental mark and sweep)
 * What is *semantic versioning*? (http://semver.org)
+MAJOR - non backwards compatible, major api changes  
+MINOR - minor changes, adding functionality, backwards compatible
+PATCH - just backwards compatible fixes
+
 * What is *A/B testing*?
 
 ####[[⬆]](#toc) <a name='architecture'>Architecture:</a>
 * *Design principles*. (SOLID, DRY, KISS, YAGNI, Worse is better, convention over configuration, separation of concerns, principle of least knowledge, tourist principle, single source of truth, single version of the truth)
+
+
+*KISS = KEEP IT SIMPLE STUPID -> most systems work best when they're kept as simple as possible, and UNNECESSARY complexities are avoided
+
+
+
 * Drawbacks of not using *separation of concerns*
   * Adding new features will take an order of magnitude longer
   * Impossible to optimize
